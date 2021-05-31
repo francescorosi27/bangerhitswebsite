@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.2/css/bulma.min.css" integrity="sha512-byErQdWdTqREz6DLAA9pCnLbdoGGhXfU6gm1c8bkf7F51JVmUBlayGe2A31VpXWQP+eiJ3ilTAZHCR3vmMyybA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <title>Banger Hits 2021</title>
+    <style>
+      * {
+        scrollbar-width: none;
+        overflow-x: initial;
+        overflow-y: unset;
+      }
+      html, body {
+      	display: flex;
+      	height: 100%;
+      	width: 100%;
+        align-items: center;
+      	justify-content: center;
+      }
+      html {
+        background-image: url("https://source.unsplash.com/collection/3174571/1920x1080");
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        font-family: 'Inter', sans-serif;
+      }
+      .card.is-wide {
+      	width: 550px;
+        border-radius: 1rem;
+        opacity: 0.5;
+        transition: 0.5s;
+        position: sticky;
+      }
+      .card:hover {
+        opacity: 1;
+      }
+      .card.has-text-centered .card-header, .card.has-text-centered .card-content, .card.has-text-centered .card-footer {
+      	justify-content: center;
+      	align-items: center;
+      }
+      .card.has-text-centered h1 {
+      	font-size: 1.75rem;
+      	font-weight: bold;
+      }
+      .card-header {
+      	padding: 1.75rem 0;
+        border-bottom: 1px solid #ededed;
+        box-shadow: none;
+        font-weight: 600;
+      }
+      .card-content {
+      	padding: 0.5rem 0;
+      }
+      .card-footer {
+        display: inline-block !important;
+      	padding: 1rem 0;
+      	font-size: 0.9rem;
+        color: #808080;
+        font-weight: 400;
+      }
+      @media (hover: none) and (pointer: coarse) {
+        #main {
+          width: 100vw;
+          height: 100vh;
+        }
+        .card {
+          margin: 0;
+          position: absolute;
+          width: 100% !important;
+          height: 100% !important;
+          height: auto;
+          top: 5rem;
+          opacity: 0.7 !important;
+          border-radius: 0 !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main">
+      <div class="card has-text-centered is-wide">
+        <header class="card-header title">Banger Hits Homepage</header>
+        <div class="card-content">
+          <h2 class="subtitle m-2">
+            Here's all of the Banger Hits playlists so far:
+            <br><ul style="list-style: initial;"><li><a href="https://2021.bangerhits.tk">Banger Hits 2021</a></li></ul>
+          </h2>
+        </div>
+        <footer class="card-footer m-2">Background image from the <a href="https://unsplash.com/collections/3174571/summer">Unsplash Summer collection</a> and some code for this card from <a href="https://codepen.io/egoens/pen/NbmEbR">this CodePen</a></footer>
+      </div>
+    </div>
+  </body>
+</html>
